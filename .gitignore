@@ -1,1 +1,8 @@
-(myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite
+*.pyc
+*~
+/.vscode
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
