@@ -7,17 +7,15 @@
             <h1><a href="\">Vamos encontrar ações utilizando a Fórmula Mágica de Joel Greenblatt</a></h1>
         </div>
 
+        {% for post in posts %}
         <div>
-            <p>Início de tudo: 02/08/2020, 6:56</p>
-            <h2><a href="">Minha primeira publicação</a></h2>
-            <p>A ideia é utilizar como base o site Fundamentus para criar uma lista diária das 5 melhores ações com base no método da Fórmula Mágica de Joel Greenblatt.</p>
+            <p>published: {{ post.published_date }} </p>
+            <h2><a href="">{{ post.title}}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            {{ post }}
         </div>
-
-        <div>
-            <p>Mais detalhes: 02/08/2020, 7:05</p>
-            <h2><a href="">O que vamos utilizar?</a></h2>
-            <p>Vamos utilizar Python como nossa linguagem, Django nosso Framework nosso Framework Web e Pandas como nosso Framework para extração de dados.</p>
-        </div>
+        {% endfor %}
+        
 
         <p>Esse site vai sair!</p>
         <p>Aguardem...</p>    
